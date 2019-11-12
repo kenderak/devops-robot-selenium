@@ -9,13 +9,7 @@ class TestLibrary(object):
             BuiltIn.import_library("SeleniumLibrary")
             self._sl = BuiltIn().get_library_instance("SeleniumLibrary")
 
-    def index1_should_be(self, expected):
-        self._sl.wait_until_element_is_visible("id:myHeader")
-        result = self._sl.get_text("id:myHeader")
-        if expected != result:
-            raise AssertionError("Text should be '%s' but the result was '%s'" % (expected, result))
-
-    def index2_should_be(self, expected):
+    def text_should_be(self, expected):
         self._sl.wait_until_element_is_visible("id:myHeader")
         result = self._sl.get_text("id:myHeader")
         if expected != result:

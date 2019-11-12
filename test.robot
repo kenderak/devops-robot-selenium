@@ -11,11 +11,11 @@ Valid Login
 
 Main Test 1
     Go To  ${URL1}
-    Index1 Should Be  Hello World1!
+    Text Should Be  Hello World1!
 
 Main Test 2
     Go To  ${URL2}
-    Index2 Should Be  Hello World1!
+    Text Should Be  Hello World2!
 
 Close Test
     Close Browser
