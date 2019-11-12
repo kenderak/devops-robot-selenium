@@ -5,6 +5,7 @@ Download ChromeDriver [https://chromedriver.chromium.org/downloads](https://chro
 *** Variables ***
 
 ${URL1}     http://{SERVER_IP}/index1
+
 ${URL2}     http://{SERVER_IP}/index2
 
 ## Test
